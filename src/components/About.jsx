@@ -130,6 +130,8 @@ export default function About() {
               <li className="fontmono">npm </li>
               <li className="fontmono">Postman </li>
               <li className="fontmono">VS Code </li>
+              <li className="fontmono">Render </li>
+              <li className="fontmono">Netlify </li>
             </ul>
           </li>
         </ol>

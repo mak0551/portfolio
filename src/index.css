@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.fontmono{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+ol,
+ul {
+  list-style: numbers; /* Ensure default list style is used */
+  margin-left: 20px; /* Add left margin for indentation */
+  padding-left: 0;
+}
+
+ol ol,
+ol ul {
+  list-style-type:lower-alpha; /* Alphabetic bullets for nested lists */
+  margin-left: 20px;
+
+}
+.marquee{
+  animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction:alternate-reverse;
+}
+@keyframes anime{
+  from{
+      transform: translatex(0);
+  }
+  to{
+      transform: translatex(-200%);
+  }
+}
+.marquee2{
+  animation-name: anime;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction:alternate-reverse;
+}
+@keyframes anime2{
+  from{
+      transform: translatex(0);
+  }
+  to{
+      transform: translatex(-500%);
+  }
+}
+.form{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: smaller;
+  margin: 0;
+}
+.input{
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
